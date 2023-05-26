@@ -14,9 +14,9 @@ import com.crud.service.BooksService;
 
 //mark class as Controller  
 @RestController
-public class HomeController {
-    
-    @GetMapping("/")
+
+public class BooksController {
+	@GetMapping("/")
     public String login(){
         return "Welcome to TipsToCode Site!";
     }
@@ -30,8 +30,7 @@ public class HomeController {
     public String admin(){
         return "Welcome admin to TipsToCode Site!";
     }
-}
-public class BooksController {
+	
 //Attire the BooksService class  
 	@Autowired
 	BooksService booksService;
