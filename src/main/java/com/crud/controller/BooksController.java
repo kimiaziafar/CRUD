@@ -16,20 +16,6 @@ import com.crud.service.BooksService;
 @RestController
 
 public class BooksController {
-	@GetMapping("/")
-    public String login(){
-        return "Welcome to TipsToCode Site!";
-    }
-    
-    @GetMapping("/user")
-    public String user(){
-        return "Welcome user to TipsToCode Site!";
-    }
-    
-    @GetMapping("/admin")
-    public String admin(){
-        return "Welcome admin to TipsToCode Site!";
-    }
 	
 //Attire the BooksService class  
 	@Autowired
