@@ -1,5 +1,6 @@
 package com.crud.controller;
 
+import java.security.Principal;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,7 +17,10 @@ import com.crud.service.BooksService;
 @RestController
 
 public class BooksController {
-	
+	@GetMapping
+    public Principal retrievePrincipal(Principal principal) {
+        return principal;
+    }
 //Attire the BooksService class  
 	@Autowired
 	BooksService booksService;
